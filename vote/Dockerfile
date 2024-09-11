@@ -12,9 +12,9 @@ WORKDIR /usr/local/app
 # Install our requirements.txt
 #COPY requirements.txt ./requirements.txt
 #RUN pip install --no-cache-dir -r requirements.txt
-RUN apt-get install --no-cache-dir -r Redis
-RUN apt-get install --no-cache-dir -r Flask
-RUN apt-get install --no-cache-dir -r gunicorn
+#RUN apt-get install --no-cache-dir -r Redis
+#RUN apt-get install --no-cache-dir -r Flask
+#RUN apt-get install --no-cache-dir -r gunicorn
 
 # Define a stage specifically for development, where it'll watch for
 # filesystem changes
